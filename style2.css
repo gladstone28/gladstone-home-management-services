@@ -1,0 +1,95 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header,
+    footer {
+        background-color: #007BFF;
+        color: #ffffff;
+        text-align: center;
+        padding: 1em 0;
+    }
+    
+    nav ul {
+        padding: 0;
+        list-style: none;
+        background-color: #333;
+        text-align: center;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: .5em 1em;
+        display: inline-block;
+    }
+    
+    nav ul li a:hover {
+        background-color: #555;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    form label {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form select,
+    form textarea {
+        flex-basis: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form button {
+        cursor: pointer;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    form button:hover {
+        background-color: #0056b3;
+    }
+    
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+        form label,
+        form input,
+        form select,
+        form textarea,
+        form button {
+            flex-basis: 100%;
+        }
+    }
